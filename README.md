@@ -10,8 +10,8 @@ composer require anomalylab/add-ons-composer-plugin
 ```json
     
     {
-        "name": "anomalylab/add-ons-composer-plugin",
-        "description": "Composer plugin for anomaly add-ons.",
+        "name": "anomalylab/example-addons",
+        "description": "You example description",
         "type": "anomaly-addons"
     }
 
