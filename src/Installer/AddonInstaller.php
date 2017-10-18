@@ -34,7 +34,7 @@ class AddonInstaller extends LibraryInstaller
 	 *
 	 *	@return		array
 	 */
-	public function getTypes()
+	public function getTypes() : array
 	{
 		return $this->types;
 	}
@@ -94,7 +94,7 @@ class AddonInstaller extends LibraryInstaller
 	 */
 	public function supports($packageType)
 	{
-		return 'anomaly-addon' === $packageType;
+		return 'anomaly-addons' === $packageType;
 	}
 
 	/**
@@ -104,7 +104,7 @@ class AddonInstaller extends LibraryInstaller
 	 */
 	public function updateIsEnabled()
 	{
-		return $this->composer->getConfig()->get('streams-composer-plugin-update');
+		return $this->composer->getConfig()->get('anomaly-composer-plugin-update');
 	}
 
 	/**
