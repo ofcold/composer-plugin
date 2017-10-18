@@ -1,5 +1,5 @@
 {
-    "name": "anomaly/add-ons-composer-plugin",
+    "name": "anomalylab/add-ons-composer-plugin",
     "description": "Composer plugin for anomaly add-ons.",
     "type": "composer-plugin",
     "license": "BSD 3-Clause",
