@@ -7,7 +7,6 @@ use Composer\Installer\InstallationManager;
 use Composer\Installer\LibraryInstaller;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
-use Anomaly\AddnsComposerPlugin\Installer\AddonInstaller;
 
 /**
  *	Plugin
@@ -25,7 +24,7 @@ class Plugin implements PluginInterface
 	 *	@var		array
 	 */
 	protected $installers = [
-		AddonInstaller::class
+		'AddonInstaller'
 	];
 
 	/**
@@ -56,7 +55,7 @@ class Plugin implements PluginInterface
 	 */
 	public function getInstaller(string $class, Composer $composer, IOInterface $io)
 	{
-		$installer = '\\' . __NAMESPACE__ . '\\Installer\\' . $class;
+		$installer = __NAMESPACE__ . '\\Installer\\' . $class;
 		return new $installer($io, $composer);
 	}
 
