@@ -1,6 +1,6 @@
 {
-    "name": "anomaly/add-ons-composer-plugin",
-    "description": "Composer plugin for streams platform.",
+    "name": "anomalylab/add-ons-composer-plugin",
+    "description": "Composer plugin for anomaly add-ons.",
     "type": "composer-plugin",
     "license": "BSD 3-Clause",
     "authors": [
