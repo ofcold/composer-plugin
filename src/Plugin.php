@@ -56,7 +56,7 @@ class Plugin implements PluginInterface
 	 */
 	public function getInstaller(string $class, Composer $composer, IOInterface $io)
 	{
-		$installer = __NAMESPACE__ . '\\Installer\\' . $class;
+		$installer = '\\' . __NAMESPACE__ . '\\Installer\\' . $class;
 		return new $installer($io, $composer);
 	}
 
