@@ -78,7 +78,9 @@ class SystemInstaller extends LibraryInstaller
 			);
 		}
 
-		return "core/{$parts[0]}/{$parts[1]}";
+		$path = strpos($parts[0], '-') ? implode('/', str_replace('-', $parts[0])) : $parts[0];
+
+		return "core/{$path}/{$parts[1]}";
 	}
 
 	/**
@@ -88,9 +90,9 @@ class SystemInstaller extends LibraryInstaller
 	 *
 	 *	@return		bool
 	 */
-	public function supports($packageType)
+	public function supports(string $packageType) : bool
 	{
-		return 'anomaly-addons' === $packageType;
+		return 'anomaly-system' === $packageType;
 	}
 
 	/**
