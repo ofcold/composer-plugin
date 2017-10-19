@@ -92,7 +92,7 @@ class AddonInstaller extends LibraryInstaller
 	 *
 	 *	@return		bool
 	 */
-	public function supports($packageType)
+	public function supports(string $packageType) : bool
 	{
 		return 'anomaly-addons' === $packageType;
 	}
