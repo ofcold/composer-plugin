@@ -24,7 +24,8 @@ class Plugin implements PluginInterface
 	 *	@var		array
 	 */
 	protected $installers = [
-		'AddonInstaller'
+		'AddonInstaller',
+		'SystemInstaller'
 	];
 
 	/**
