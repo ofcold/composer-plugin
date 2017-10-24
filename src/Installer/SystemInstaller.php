@@ -21,8 +21,7 @@ class SystemInstaller extends LibraryInstaller
 	 *	@var		array
 	 */
 	protected $types = [
-		'anomaly-system',
-		'anomaly-component'
+		'anomaly-system'
 	];
 
 	/**
@@ -33,18 +32,6 @@ class SystemInstaller extends LibraryInstaller
 	public function getTypes() : array
 	{
 		return $this->types;
-	}
-
-	/**
-	 *	Get regex
-	 *
-	 *	@return		string
-	 */
-	public function getRegex() : string
-	{
-		$types = implode('|', $this->getTypes());
-
-		return "/^([\w-]+)-({$types})$/";
 	}
 
 	/**
@@ -67,18 +54,14 @@ class SystemInstaller extends LibraryInstaller
 			);
 		}
 
-		$packageName = $parts[1];
-
-		preg_match($this->getRegex(), $packageName, $match);
-
-		if ( count($match) != 3 )
+		if ( strpos($parts[0], '-') === false )
 		{
 			throw new \InvalidArgumentException(
 				"Invalid addon package name [{$name}]. Should be in the form of name-type [{$packageName}]."
 			);
 		}
 
-		$path = strpos($parts[0], '-') ? implode('/', str_replace('-', $parts[0])) : $parts[0];
+		$path = implode('/', explode('-', $parts[0]));
 
 		return "core/{$path}/{$parts[1]}";
 	}
