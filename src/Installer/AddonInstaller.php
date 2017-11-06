@@ -71,18 +71,7 @@ class AddonInstaller extends LibraryInstaller
 			);
 		}
 
-		$packageName = $parts[1];
-
-		preg_match($this->getRegex(), $packageName, $match);
-
-		if ( count($match) != 3 )
-		{
-			throw new \InvalidArgumentException(
-				"Invalid addon package name [{$name}]. Should be in the form of name-type [{$packageName}]."
-			);
-		}
-
-		return "applications/{$parts[0]}-{$parts[1]}";
+		return "applications/core/$parts[0]/{$parts[1]}";
 	}
 
 	/**
