@@ -21,7 +21,8 @@ class SystemInstaller extends LibraryInstaller
 	 *	@var		array
 	 */
 	protected $types = [
-		'anomaly-system'
+		'anomaly-system',
+		'anomaly-components'
 	];
 
 	/**
