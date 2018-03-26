@@ -58,7 +58,7 @@ class SystemInstaller extends LibraryInstaller
 		if ( strpos($parts[0], '-') === false )
 		{
 			throw new \InvalidArgumentException(
-				"Invalid addon package name [{$name}]. Should be in the form of name-type [{$packageName}]."
+				"Invalid addon package name [{$name}]. Should be in the form of name-type [{$name}]."
 			);
 		}
 
