@@ -1,6 +1,6 @@
 <?php
 
-namespace Anomaly\ComposerPlugin;
+namespace Ofcold\ComposerPlugin;
 
 use Composer\Composer;
 use Composer\Installer\InstallationManager;
@@ -11,7 +11,7 @@ use Composer\Plugin\PluginInterface;
 /**
  *	Class Plugin
  *
- *	@link		https://ofcold.ink
+ *	@link		https://ofcold.com
  *
  *	@author		Ofcold, Inc <support@ofcold.com>
  *	@author		Olivia Fu <olivia@ofcold.com>
