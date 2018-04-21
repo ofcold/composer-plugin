@@ -25,8 +25,8 @@ class SystemInstaller extends LibraryInstaller
 	 *	@var		array
 	 */
 	protected $types = [
-		'anomaly-system',
-		'anomaly-components'
+		'ofcold-system',
+		'ofcold-components'
 	];
 
 	/**
@@ -80,7 +80,7 @@ class SystemInstaller extends LibraryInstaller
 	 */
 	public function supports($packageType)
 	{
-		return 'anomaly-system' === $packageType;
+		return 'ofcold-system' === $packageType;
 	}
 
 	/**
@@ -90,7 +90,7 @@ class SystemInstaller extends LibraryInstaller
 	 */
 	public function updateIsEnabled()
 	{
-		return $this->composer->getConfig()->get('anomaly-composer-plugin-update');
+		return $this->composer->getConfig()->get('ofcold-composer-plugin-update');
 	}
 
 	/**
