@@ -1,5 +1,5 @@
 {
-    "name": "ofcold/add-ons-composer-plugin",
+    "name": "ofcold/composer-plugin",
     "description": "Composer plugin for anomaly add-ons.",
     "keywords": ["composer plugin", "composer", "plugin", "package manager"],
     "type": "composer-plugin",
