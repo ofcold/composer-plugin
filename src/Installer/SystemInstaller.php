@@ -1,17 +1,21 @@
 <?php
 
-namespace Anomaly\AddnsComposerPlugin\Installer;
+namespace Ofcold\ComposerPlugin\Installer;
 
 use Composer\Installer\LibraryInstaller;
 use Composer\Package\PackageInterface;
 use Composer\Repository\InstalledRepositoryInterface;
 
 /**
- *	SystemInstaller
+ *	Class SystemInstaller
  *
- *	@link		https://anomalylab.org
- *	@author		Anomaly lab, Inc <support@anomalylab.org>
- *	@author		Bill Li <bill@anomalylab.org>
+ *	@link		https://ofcold.ink
+ *
+ *	@author		Ofcold, Inc <support@ofcold.com>
+ *	@author		Olivia Fu <olivia@ofcold.com>
+ *	@author		Bill Li <bill.li@ofcold.com>
+ *
+ *	@package	Ofcold\ComposerPlugin\Installer\SystemInstaller
  */
 class SystemInstaller extends LibraryInstaller
 {

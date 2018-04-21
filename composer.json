@@ -1,12 +1,24 @@
 {
-    "name": "anomalylab/add-ons-composer-plugin",
+    "name": "ofcold/add-ons-composer-plugin",
     "description": "Composer plugin for anomaly add-ons.",
+    "keywords": ["composer plugin", "composer", "plugin", "package manager"],
     "type": "composer-plugin",
     "license": "BSD 3-Clause",
+    "homepage": "https://ofcold.com/",
     "authors": [
         {
-            "name": "Bill",
-            "email": "bill@anomalylab.org",
+            "name": "Ofcold Team",
+            "email": "support@ofcold.com",
+            "homepage": "https://ofcold.com"
+        },
+        {
+            "name": "Olivia Fu",
+            "email": "olivia.fu@ofcold.com",
+            "homepage": "https://olivia.ink"
+        },
+        {
+            "name": "Bill Li",
+            "email": "bill@ofcold.com",
             "homepage": "https://artisanbill.com"
         }
     ],
@@ -25,12 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Anomaly\\AddnsComposerPlugin\\": "src/"
+            "Ofcold\\ComposerPlugin\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "extra": {
-        "class": "Anomaly\\AddnsComposerPlugin\\Plugin",
+        "class": "Ofcold\\ComposerPlugin\\Plugin",
         "branch-alias": {
             "dev-master": "0.1.x-dev"
         }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Anomaly\AddnsComposerPlugin;
+namespace Anomaly\ComposerPlugin;
 
 use Composer\Composer;
 use Composer\Installer\InstallationManager;
@@ -9,15 +9,18 @@ use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
 /**
- *	Plugin
+ *	Class Plugin
  *
- *	@link		https://anomalylab.org
- *	@author		Anomaly lab, Inc <support@anomalylab.org>
- *	@author		Bill Li <bill@anomalylab.org>
+ *	@link		https://ofcold.ink
+ *
+ *	@author		Ofcold, Inc <support@ofcold.com>
+ *	@author		Olivia Fu <olivia@ofcold.com>
+ *	@author		Bill Li <bill.li@ofcold.com>
+ *
+ *	@package	Ofcold\ComposerPlugin\Plugin
  */
 class Plugin implements PluginInterface
 {
-
 	/**
 	 *	Installers
 	 *

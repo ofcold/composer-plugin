@@ -1,17 +1,21 @@
 <?php
 
-namespace Anomaly\AddnsComposerPlugin\Installer;
+namespace Ofcold\ComposerPlugin\Installer;
 
 use Composer\Installer\LibraryInstaller;
 use Composer\Package\PackageInterface;
 use Composer\Repository\InstalledRepositoryInterface;
 
 /**
- *	AddonInstaller
+ *	Class AddonInstaller
  *
- *	@link		https://anomalylab.org
- *	@author		Anomaly lab, Inc <support@anomalylab.org>
- *	@author		Bill Li <bill@anomalylab.org>
+ *	@link		https://ofcold.ink
+ *
+ *	@author		Ofcold, Inc <support@ofcold.com>
+ *	@author		Olivia Fu <olivia@ofcold.com>
+ *	@author		Bill Li <bill.li@ofcold.com>
+ *
+ *	@package	Ofcold\ComposerPlugin\Installer\AddonInstaller
  */
 class AddonInstaller extends LibraryInstaller
 {
@@ -25,6 +29,7 @@ class AddonInstaller extends LibraryInstaller
 		'extension',
 		'module',
 		'plugin',
+		'bundle',
 		'block',
 		'theme',
 	];
@@ -95,7 +100,7 @@ class AddonInstaller extends LibraryInstaller
 	 */
 	public function updateIsEnabled()
 	{
-		return $this->composer->getConfig()->get('anomaly-composer-plugin-update');
+		return $this->composer->getConfig()->get('ofcold-composer-plugin-update');
 	}
 
 	/**
