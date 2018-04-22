@@ -1,6 +1,6 @@
 {
     "name": "ofcold/composer-plugin",
-    "description": "Composer plugin for anomaly add-ons.",
+    "description": "Composer plugin for ofcold add-ons.",
     "keywords": ["composer plugin", "composer", "plugin", "package manager"],
     "type": "composer-plugin",
     "license": "BSD 3-Clause",
