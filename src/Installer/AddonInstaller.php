@@ -78,7 +78,7 @@ class AddonInstaller extends LibraryInstaller
 
 		$vendor = str_replace('-', '/', $parts[0]);
 
-		return "applications/$vendor/{$parts[1]}";
+		return "core/$vendor/{$parts[1]}";
 	}
 
 	/**
